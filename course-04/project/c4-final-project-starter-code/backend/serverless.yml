@@ -82,10 +82,6 @@ functions:
         Action:
           - dynamodb:PutItem
         Resource: !GetAtt TodosTable.Arn
-      - Effect: Allow
-        Action:
-          - ses:VerifyEmailIdentity
-        Resource: '*'
 
   # TODO: Configure this function
   # Provide property for setting up CORS, Authorizer, iamRoleStatements, and request schemas
